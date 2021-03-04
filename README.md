@@ -1,7 +1,7 @@
 # PID Manager - Karim Nekzad
 Allocates and deallocates memory in a list for PIDs. (Python)
 
-
+![pid_manager_output](https://user-images.githubusercontent.com/62914827/109902971-2dfe8f80-7c69-11eb-9407-9f3ea0918b35.png)
 
 ## How to run
 1. Down all python files. `*.py`
