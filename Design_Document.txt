@@ -1,0 +1,41 @@
+By: Karim Nekzad
+
+This PID manager is implemented with a PIDManager class that contains static variables
+and methods.  PIDManager error checks within its methods by using the custom exceptions
+provided by the pid_excepts.py file.  The main.py file is used to test the PIDManager
+class.  It makes use of try/except blocks to ensure that errors are handled gracefully.
+
+*File: pid_excepts.py
+Holds the exceptions that are used to error check by the PID manager.
+
+Classes
+PIDException       : A general exception which all other PID related exceptions inherit.
+AllocationError    : A general exception which all other allocation related exceptions
+                     inherit.
+MapAllocationError : Failure to allocate map.
+PIDAllocationError : Failure to allocate PID.
+ReleaseError       : Failure to release a PID either due to invalid PID given or
+                     if it is already empty.
+OutOfBoundsError   : Given PID is not within PID map's range.
+
+*File: pid_manager.py
+PID manager that can control various processes by allocating and deallocating PIDs.
+
+Classes
+PIDManager   : A PID manager that can allocate unique PIDs for processes
+               and deallocate PIDs from terminated processes.  Implements
+               error checking for all relevant operations.
+Functions
+allocate_map : Allocates a list whose size conforms to the given specifications.
+               Ensures that a map hasn't yet been allocated.
+allocate_pid : Allocate an empty PID.  Ensures that there is an available PID.
+release_pid  : Release an allocated process by specifying its PID.  Ensures that
+               specified PID exists within the map and that the process is not
+               empty.
+               [Parameters]
+               pid : The PID being released.
+
+*File : main.py
+This file is mainly to test the PIDManager class using try/except blocks.
+
+END

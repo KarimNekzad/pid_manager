@@ -1,0 +1,13 @@
+Author: Karim Nekzad
+
+Restate Problem Statement:
+A functioning PID manager must be able to allocate a unique PID to each running process.
+In addition to allocation, it must also deallocate PIDs when processes are terminated,
+either by choice or via an error.  We are tasked with implementing a PID manager that can
+allocate and deallocate PIDs via a bitmap; ensuring to check for errors in all relevant operations.
+
+Assumptions: N/A
+
+Language: Python
+
+END

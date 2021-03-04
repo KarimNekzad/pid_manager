@@ -1,0 +1,14 @@
+PID map allocated.
+Error: PID map already allocated
+Allocated PID 300
+Allocated PID 301
+Allocated PID 302
+Released PID 300
+Released PID 301
+Released PID 302
+Error: PID 303 is already empty
+Error: PID 5001 is out of bounds
+Error: PID 299 is out of bounds
+Error: PID 5000 is already empty
+Error: All PIDs in use
+Length of PID map: 4701
